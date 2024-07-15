@@ -1,0 +1,179 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for header */
+    z-index: 1000;
+  }
+  
+  header .logo {
+    width: 150px;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header ul li {
+    display: inline;
+  }
+  
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #hero {
+    height: 100vh;
+    background: url("images\depositphotos_3306463-stock-photo-blueprint.jpg") no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  }
+  
+  #hero .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  #hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #about-us p, #competitive-advantage p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  #services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #services ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  #contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact form input, #contact form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #contact form button {
+    padding: 10px 20px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-links, .social-media, .newsletter-signup {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .newsletter-signup input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .newsletter-signup button {
+    padding: 10px 20px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 2rem;
+    }
+  
+    #hero p {
+      font-size: 1rem;
+    }
+  
+    header ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
